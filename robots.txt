@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zabchik.github.io/avtoelektrik-mlyniv/sitemap.xml
