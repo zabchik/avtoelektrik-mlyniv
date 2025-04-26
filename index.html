@@ -130,6 +130,19 @@
       text-align: center;
      background-color: #c3dde3;
     }
+    .footer_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* по замовчуванню — в один ряд */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer_p p {
+  font-size: 25px;
+  margin: 0;
+}
 
     @media (max-width: 768px) {
       .container {
@@ -270,6 +283,11 @@ header h1 {
   line-height: 1.15;
 }
     }
+    @media (max-width: 600px) {
+  .footer_p {
+    flex-direction: column;
+    text-align: center;
+  }
   </style>
 </head>
   <link rel="icon" type="image/png" href="favicon.png" />
