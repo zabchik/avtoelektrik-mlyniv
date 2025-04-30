@@ -77,12 +77,15 @@
       z-index: 1;
     }
 
-    header h1, header h2 {
-      margin: 0;
-      line-height: 1.5;
+    header h1 {
+      
       text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     }
-
+header h1, h2{
+  line-height: 1.5;
+  margin: 0;
+  padding-top: 33px;
+}
     /*Кнопка Передзвоніть мені*/
   .callback-form {
   opacity: 0;
@@ -204,6 +207,7 @@
       align-items: center;
       text-align: center;
      background-color: #c3dde3;
+     color: #000;
     }
 
     .footer_p {
@@ -217,7 +221,7 @@
 
     @media (max-width: 768px) {
       .container {
-        padding-top: 280px;
+        padding-top: 0;
       }
       header h2{
         margin-bottom: 0;
@@ -229,7 +233,7 @@
 
     @media (max-width: 480px) {
       .container {
-        padding-top: 320px;
+        padding-top: 0px;
       }
     }
 
@@ -391,7 +395,7 @@ header h1 {
     <p class="Mlyniv">Млинів</p>
   
   
-  <div class="callback-container">
+  <!-- <div class="callback-container">
   <button id="showFormBtn" class="call-btn">Передзвонити вам?</button>
 
   <form id="callbackForm" class="callback-form">
@@ -403,12 +407,12 @@ header h1 {
   Дякуємо! Ми скоро з вами зв'яжемося. ✅
 </div>
 </div>
-  </header>
+  </header> -->
 
 
 
-<script>
-const token = "";
+<!-- <script>
+const token = "8016492579:AAG361s2oIP9c2LJn1DTRiUOvHR2ZP72meY";
 const chat_id = "801095938";
 
 const successMessage = document.getElementById('successMessage');
@@ -452,7 +456,7 @@ callbackForm.addEventListener('submit', (e) => {
 });
 
 
-</script>
+</script> -->
 
 
   <div class="container">
@@ -475,7 +479,7 @@ callbackForm.addEventListener('submit', (e) => {
       <p class="KnO">Млинів. Княгині Ольги, 38</p></div>
       
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9347.069664594748!2d25.614411507627953!3d50.51056116181999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472f8026e521ced7%3A0xcf3773fa98ec2f13!2zR0o3Rys2SjYsINCc0LvQuNC90ZbQsiwg0KDRltCy0L3QtdC90YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDM1MTAw!5e0!3m2!1suk!2sua!4v1745476979635!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <img src="IMG_0437.JPG" alt="Карта та орієнтир до майстерні">
+      <img src="photo_2025-04-30_09-32-37.jpg" alt="Карта та орієнтир до майстерні">
     </div>
 
     <div class="how-to fade-in">
