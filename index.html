@@ -2,7 +2,9 @@
 <html lang="uk">
 <head>
   <link rel="icon" type="image/png" href="favicon.svg" sizes="96x96" />
-
+<!--<link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
+<!--<link rel="icon" href="favicon.ico" />-->
+<!--<link rel="manifest" href="/site.webmanifest" />-->
   <meta name="google-site-verification" content="3hwWhzdIGE0oyQ7lG71kvWn5Yuy_-kaUt9A9jJKAXgE" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -43,12 +45,12 @@
     header {
       background: url(header-bg.jpg) no-repeat center center;
     background-size: cover;
-    height: auto;
+    height: 254px;
     color: #fff;
     padding: 20px 0px 20px 0px;
     /* margin-bottom: 38px; */
     text-align: center;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -77,58 +79,11 @@
       z-index: 1;
     }
 
-    header h1 {
-      
+    header h1, header h2 {
+      margin: 0;
+      line-height: 1.5;
       text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     }
-header h1, h2{
-  line-height: 1.5;
-  margin: 0;
-  padding-top: 33px;
-}
-    /*Кнопка Передзвоніть мені*/
-  .callback-form {
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: all 0.5s ease;
-  max-height: 0;
-  overflow: hidden;
-}
-
-
-.callback-form.active {
-  opacity: 1;
-  transform: scaleY(1);
-  max-height: 300px; /* або скільки потрібно */
-}
-
-.callback-form.show {
-  opacity: 1;
-  transform: scaleY(1);
-}
-
-
-  .callback-form input[type="tel"] {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-  }
-  .callback-form input[type="submit"] {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  .callback-form input[type="submit"]:hover {
-    background-color: #0056b3;
-  } /*Кнопка Передзвоніть менні*/
-
 
     .Mlyniv {
       font-size: 30px;
@@ -148,36 +103,6 @@ header h1, h2{
       max-width: 100%;
     }
 
-    /*Кнопка передзвоніть,блок*/
-    .callback-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.success-message {
-  background-color: #d4edda;
-  color: #155724;
-  padding: 15px 20px;
-  margin-top: 15px;
-  border: 1px solid #c3e6cb;
-  border-radius: 10px;
-  font-size: 18px;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: all 0.5s ease;
-}
-
-.success-message.show {
-  opacity: 1;
-  transform: scale(1);
-}
-.hidden {
-  display: none;
-}
-
-
     .call-btn {
       display: inline-block;
       background: #1abc9c;
@@ -185,14 +110,11 @@ header h1, h2{
       padding: 10px 20px;
       border-radius: 8px;
       font-weight: bold;
-      font-size: 20px;
       text-decoration: none;
       margin-top: 8px;
       transition: background 0.3s ease, transform 0.2s ease;
       max-width: 90%;
       word-wrap: break-word;
-      border: none; /* прибираємо чорну рамку */
-      outline: none; /* прибираємо фокус-обведення */
     }
 
     .call-btn:hover {
@@ -201,13 +123,18 @@ header h1, h2{
     }
 
     .container {
-      padding-top: 30px;
+      padding-top: 291px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
      background-color: #c3dde3;
-     color: #000;
+    }
+    .location {
+      box-shadow: 5px 20px 40px rgba(0, 0, 0, 0.55);
+  padding: 10px; /* трішки внутрішнього відступу, щоб тінь виглядала красиво */
+  border-radius: 10px; /* за бажанням — трохи скруглені кути */
+  background: #fff; /* щоб блок не був прозорий */
     }
 
     .footer_p {
@@ -219,9 +146,13 @@ header h1, h2{
   flex-wrap: wrap;
 }
 
+.footer_p p {
+  font-size: 25px;
+  margin: 0;
+}
     @media (max-width: 768px) {
       .container {
-        padding-top: 0;
+        padding-top: 280px;
       }
       header h2{
         margin-bottom: 0;
@@ -233,7 +164,7 @@ header h1, h2{
 
     @media (max-width: 480px) {
       .container {
-        padding-top: 0px;
+        padding-top: 320px;
       }
     }
 
@@ -243,12 +174,6 @@ header h1, h2{
       max-width: 800px;
       padding: 0 20px;
       font-size: 20px;
-    }
-    .location {
-      box-shadow: 5px 20px 40px rgba(0, 0, 0, 0.55);
-  padding: 10px; /* трішки внутрішнього відступу, щоб тінь виглядала красиво */
-  border-radius: 10px; /* за бажанням — трохи скруглені кути */
-  background: #fff; /* щоб блок не був прозорий */
     }
     .contacts a {
       color: #2e3233;
@@ -293,7 +218,7 @@ header h1, h2{
     }
 
     footer {
-      line-height: 0.9;
+      line-height: 0,9;
       height: auto;
 
       background: #2c3e50;
@@ -306,9 +231,9 @@ header h1, h2{
     .footer_p p {
 
       line-height: 0.7;
-      font-size: 25px;
-       margin: 0;
-      }
+  font-size: 25px;
+  margin: 0;
+}
 
     a {
       color: #1abc9c;
@@ -393,71 +318,8 @@ header h1 {
     <h1><div>АВТОЕЛЕКТРИК У МЛИНОВІ   </div><div class="repair">Діагностика та ремонт</div></h1>
     <h2><a href="tel:+380677014951">+38 (067) 701-49-51</a></h2>
     <p class="Mlyniv">Млинів</p>
-  
-  
-  <!-- <div class="callback-container">
-  <button id="showFormBtn" class="call-btn">Передзвонити вам?</button>
-
-  <form id="callbackForm" class="callback-form">
-    
-    <input type="tel" id="phoneInput" placeholder="Ваш номер телефону" required><br>
-    <input type="submit" value="Замовити дзвінок">
-  </form>
-  <div id="successMessage" class="success-message hidden">
-  Дякуємо! Ми скоро з вами зв'яжемося. ✅
-</div>
-</div>
-  </header> -->
-
-
-
-<!-- <script>
-const token = "8016492579:AAG361s2oIP9c2LJn1DTRiUOvHR2ZP72meY";
-const chat_id = "801095938";
-
-const successMessage = document.getElementById('successMessage');
-const showFormBtn = document.getElementById('showFormBtn');
-const callbackForm = document.getElementById('callbackForm');
-const phoneInput = document.getElementById('phoneInput');
-
-showFormBtn.addEventListener('click', () => {
-  callbackForm.classList.add('active');
-  callbackForm.style.display = 'block'; // Показати форму знову
-  showFormBtn.style.display = 'none';
-});
-
-callbackForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const phone = phoneInput.value;
-  const message = `Новий запит на передзвонення: %0AТелефон: ${phone}`;
-
-  fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`)
-    .then(response => {
-  if (response.ok) {
-    callbackForm.classList.remove('active');
-    setTimeout(() => {
-      callbackForm.reset();
-      successMessage.classList.remove('hidden');
-      successMessage.classList.add('show');
-
-      setTimeout(() => {
-        successMessage.classList.remove('show');
-        setTimeout(() => {
-          successMessage.classList.add('hidden');
-          showFormBtn.style.display = 'inline-block';
-          // НЕ ховаємо callbackForm зовсім, просто залишається непоказаною без класу 'active'
-        }, 500);
-      }, 3000);
-    }, 500);
-  } else {
-    alert('Помилка при надсиланні. Спробуйте ще раз.');
-  }
-});
-});
-
-
-</script> -->
-
+    <a href="tel:+380677014951" class="call-btn">Зателефонувати</a>
+  </header>
 
   <div class="container">
     <div class="main fade-in">
@@ -485,15 +347,16 @@ callbackForm.addEventListener('submit', (e) => {
     <div class="how-to fade-in">
       <h2>Як доїхати:</h2>
       <p class="go">Відео з маршрутом від кільця до майстерні. Натисніть Play, щоб переглянути:</p>
-      <iframe width="560" height="315" 
+<iframe width="560" height="315" 
   src="https://www.youtube.com/embed/I3uaqy6OeV4" 
   title="Як доїхати до автоелектрика в Млинові" 
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   allowfullscreen>
-</iframe>
-
+</iframe>    
     </div>
+
+   
 
     <div class="why-us fade-in">
       <h2>Чому обирають нас:</h2>
@@ -515,7 +378,7 @@ callbackForm.addEventListener('submit', (e) => {
   <footer>
     <div class="footer_p">
       <div><p>Щоб ваше авто валило,</p></div>  
-      <div><p>а не нудило!</p></div>
+      <div><p>а не чудило!</p></div>
    </div>
   </footer>
 </body>
