@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="uk" style="padding: 0px;">
+<head>
+  <link rel="icon" type="image/png" href="favicon.svg" sizes="96x96" />
+<!--<link rel="icon" type="image/svg+xml" href="favicon.svg" /> -->
+<!--<link rel="icon" href="favicon.ico" />-->
+<!--<link rel="manifest" href="/site.webmanifest" />-->
+  <meta name="google-site-verification" content="3hwWhzdIGE0oyQ7lG71kvWn5Yuy_-kaUt9A9jJKAXgE" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Професійна діагностика та ремонт автоелектроніки в Млинові. Виїзд до клієнта, сучасне обладнання, гарантія на роботи. Телефонуйте зараз!" />
+  <meta name="keywords" content="автоелектрик Млинів, ремонт автоелектрики, електрик для авто, Млинів Рівненська область, авто не заводиться, виїзд автоелектрик" />
+  <meta name="author" content="Автоелектрик Млинів" />
+  <title>Автоелектрик Млинів | Діагностика та ремонт</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Автоелектрик Млинів",
+    "image": "https://example.com/header-bg.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Млинів",
+      "addressRegion": "Рівненська область",
+      "addressCountry": "UA"
+    },
+    "telephone": "+380677014951",
+    "url": "https://example.com",
+    "openingHours": "Mo-Sa 08:00-18:00",
+    "priceRange": "$"
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+     header {
+      background: url(header-bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 254px;
+    color: #fff;
+    padding: 20px 0px 20px 0px;
+    /* margin-bottom: 38px; */
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+      /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);*/
+    }
+
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    h1{
+      /*display: flex;*/
+      color: #FFF;
+      text-align: center;
+    }
+    .hero-header {
+  position: relative;
+  background: url('header-bg.jpg') center center/cover no-repeat;
+  height: 300px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.top-nav {
+  display: flex;
+  gap: 1rem;
+  z-index: 2;
+  padding-right: 20px;
+}
+
+.top-nav a {
+  color: #1abc9c;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.top-nav a:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.hero-content p {
+  margin: 0.3rem 0;
+  font-size: 1.2rem;
+}
+.hero-content .Mlyniv {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+    .repair {
+      color: #78cce3;
+    }
+
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+
+    header h1, header h2 {
+      margin: 0;
+      line-height: 1.5;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .Mlyniv {
+      font-size: 30px;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    header h2 {
+      font-size: 30px;
+      text-align: center;
+
+    }
+    
+    header h1, header h2, header p {
+      word-wrap: break-word;
+      white-space: normal;
+      max-width: 100%;
+    }
+
+    .call-btn {
+      display: inline-block;
+      background: #1abc9c;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 8px;
+      transition: background 0.3s ease, transform 0.2s ease;
+      max-width: 90%;
+      word-wrap: break-word;
+    }
+
+    .call-btn:hover {
+      background: #16a085;
+      transform: scale(1.05);
+    }
+
+    .container {
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+     background-color: #c3dde3;
+    }
+    
+
+    .footer_p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* по замовчуванню — в один ряд */
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer_p p {
+  font-size: 25px;
+  margin: 0;
+}
+    @media (max-width: 768px) {
+      .container {
+        padding-top: 0;
+      }
+      header h2{
+        margin-bottom: 0;
+      }
+      .Mlyniv{
+        margin: 10px;
+    }
+    .top-nav {
+    justify-content: center;
+    padding-right: 0;
+  }
+  }
+
+    @media (max-width: 480px) {
+    .container {
+        padding-top: 268px;
+    }
+}
+      html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+    
+    .contacts a {
+      color: #2e3233;
+    }
+    .loctext {
+      display: flex;
+    }
+    .loctext p {
+      font-size: 20px;
+    }
+    .KnO {
+      display: inline-block;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 20px;
+
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 5px 0 5px 25px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "\2714";
+      color: #2e3233;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    footer {
+      line-height: 0,9;
+      height: auto;
+
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+      /* margin-top: 50px; */
+      font-size: 50px;
+    }
+    .footer_p p {
+
+      line-height: 0.7;
+  font-size: 25px;
+  margin: 0;
+}
+
+    a {
+      color: #1abc9c;
+      text-decoration: none;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (min-width: 769px) {
+      .container {
+        flex-direction: column;
+        margin: 293px 0 0;
+      }
+    
+      .top-nav {
+    justify-content: flex-end;
+  }
+   header {
+      min-height: 309px;
+    }
+    .fade-in {
+      margin-top: 56px;
+    }
+
+    }
+
+    @media (max-width: 600px) {
+
+      header {
+    min-height: 200px;
+  }
+
+      header h1 {
+        font-size: 26px;
+      }
+
+      header h2 {
+        font-size: 20px;
+      }
+      .container {
+    padding-top: 320px;
+  }
+
+      .Mlyniv {
+        font-size: 30px;
+        margin: 4px;
+      }
+      .KnO {
+      display: inline-flex;
+      
+      }
+      .loctext {
+        display: inline-table;
+      }
+      .loctext p {
+        margin-bottom: 20px;
+      }
+    }
+    @media (max-width: 365px) {
+header h1 {
+  line-height: 1.15;
+}
+    }
+    
+
+    @media (max-width: 600px) {
+  .footer_p {
+    flex-direction: column;
+    text-align: center;
+    /*margin: 10px;*/
+  }
+}
+.accordion {
+      background: #333;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #444;
+    }
+
+    .accordion-header {
+      background: #444;
+      color: #fff;
+      padding: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center ;
+    }
+
+    .accordion-header:hover {
+      background: #555;
+    }
+
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background: #2a2a2a;
+      padding: 0  ;
+    }
+
+    .accordion-content p {
+      margin: 1rem 1rem;
+      font-size: 0.95rem;
+      color: #eee;
+
+    }
+
+    .active .accordion-content {
+      max-height: 200px;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .active .arrow {
+      transform: rotate(90deg);
+    }
+
+    .note {
+      text-align: center;
+      font-style: italic;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 1rem auto;
+      color: var(--main-color);
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* 📱 Mobile optimization */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      nav a {
+        font-size: 0.95rem;
+        margin: 0.3rem 0.6rem;
+      }
+
+      .accordion-header {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+      }
+
+      .accordion-content p {
+        font-size: 0.9rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+<body>
+  <header>
+  <nav class="top-nav">
+    <a href="index.html">Головна</a>
+    <a href="ciny.html">Ціни</a>
+    <a href="index.html#map">Як доїхати</a>
+  </nav>
+
+  
+        <h1>
+          <div>АВТОЕЛЕКТРИК У МЛИНОВІ   </div>
+          <div class="repair">Діагностика та ремонт</div>
+        </h1>
+
+    <h2><a href="tel:+380677014951">+38 (067) 701-49-51</a></h2>
+    <p class="Mlyniv">Млинів</p>
+    <a href="tel:+380677014951" class="call-btn">Зателефонувати</a>
+  
+</header>
+
+  <div class="container">
+    <h2>Ціни на послуги</h2>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Діагностика сканером. Стирання помилок &nbsp; 300 <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Додаткові діагностичні дії оплачуються окремо в залежності від доступності елементів. Від 100 до 600</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Діагностика стартера/генератора &nbsp; 200+<span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Демонтаж-монтаж генератора від 400 до 800 В залежності від доступу.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Усунення короткого замкнення. Ремонт проводки &nbsp; 500 +/-<span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Ремонт поплавленої проводки обговорюється</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Ремонт блоків управління (BSI, BCM, ABS...). Від 1000 до 2500 <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Залежить від складності робіт.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Встановлення ЦЗ, GPS-трекерів &nbsp; 800 - 1200 <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Просте встановлення ЦЗ, без приводів 800грн</p>
+          <p>Встановлення одного приводу додатково 600 грн</p>
+          <p>Встановлення Android системи із камерою 1600 грн</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Заміна, ремонт замка &nbsp;800 - 1200 <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Проста заміна 800. Ремонт замка +400</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Заміна склопідйомника &nbsp;1200 <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Ремонт електричної частини &nbsp;400-1000.</p>
+          <p>Від ремонту кнопки до ремонту моторчика</p>
+        </div>
+      </div>
+    
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+          Завести машину, що не заводиться &nbsp;1200+ <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Залежить від складності випадку </p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <div class="accordion-header">
+          Заміна лампочок &nbsp;100+ <span class="arrow">▶</span>
+        </div>
+        <div class="accordion-content">
+          <p>Залежить від складності доступу </p>
+        </div>
+    </div>
+</div>
+    <p class="note">* Остаточна вартість залежить від марки авто, стану та об'єму робіт.</p>
+    <p class="note">* Ціни наведені в грн.</p>
+
+    <a href="index.html" class="back-link">← Назад на головну</a>
+  </div>
+
+<footer>
+    <div class="footer_p">
+      <div><p>Щоб ваше авто валило,</p></div>  
+      <div><p>а не чудило!</p></div>
+   </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
